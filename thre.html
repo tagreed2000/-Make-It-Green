@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>لاـ للاحتطاب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/thre.css">
+</head>
+<body>
+
+  <header>
+   
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a class="logo"> #خلهاـ خضراء <span>..</span></a>
+    <nav class="navbar">
+      <a href="index.html">الرئيسية</a>
+      <a href="Hal.html">العقوبات </a>
+      <a href="thre.html">الحلول</a>
+      <a href="fory.html">العواقب</a>
+      <a href="fiv.html">الأثر البعيد</a>
+    </nav>
+  </header>
+    
+
+  <section class="journey-section" id="solutions">
+    <h2 class="section-title">جهود المملكة للحد من الاحتطاب الجائر</h2>
+    <p class="journey-intro">
+      تواجه المملكة تحديات بيئية كبيرة بسبب الاحتطاب الجائر الذي يُهدد الغطاء النباتي الطبيعي ويزيد من التصحر.<br>
+      لذلك أطلقت عدة مبادرات بيئية وتشريعية تهدف إلى حماية البيئة واستدامتها.<br>
+      من خلال التشجير وتوفير البدائل ورفع الوعي، تسعى المملكة إلى تحقيق توازن بيئي مستدام.<br>
+      فيما يلي أبرز الجهود التي بُذلت للحد من هذه الظاهرة البيئية الخطيرة.
+    </p>
+  
+    <div class="journey-wrapper">
+    
+  
+      <div class="journey-content-wrapper">
+        <div class="journey-step">
+          <div class="journey-image">
+            <img src="/images/AA27D78D-6918-4D0C-841D-2C2A4B8F91AF.PNG" alt="سن القوانين البيئية">
+          </div>
+          <div class="journey-content">
+            <h3><i class="fas fa-gavel"></i> سن قوانين صارمة</h3>
+            <p>تم إقرار أنظمة تمنع الاحتطاب وتفرض غرامات على المخالفين لحماية الغطاء النباتي والتنوع البيئي في المملكة.</p>
+          </div>
+        </div>
+  
+        <div class="journey-step">
+          <div class="journey-image">
+            <img src="/images/B92BF767-2179-4F09-BC4B-F9677C4B507F.jpg" alt="المبادرة السعودية الخضراء">
+          </div>
+          <div class="journey-content">
+            <h3><i class="fas fa-seedling"></i> المبادرة السعودية الخضراء</h3>
+            <p>تهدف إلى زراعة ملايين الأشجار وتحقيق التنمية البيئية المستدامة وتحسين جودة الهواء والحياة.</p>
+          </div>
+        </div>
+  
+        <div class="journey-step">
+          <div class="journey-image">
+            <img src="/images/3AA24DB9-3227-4C02-8751-2791772FBD4F.PNG" alt="الحطب الصناعي">
+          </div>
+          <div class="journey-content">
+            <h3><i class="fas fa-campground"></i> توفير الحطب البديل</h3>
+            <p>تشجيع استخدام الحطب الصناعي والغاز كبدائل بيئية آمنة للحد من استهلاك الحطب الطبيعي.</p>
+          </div>
+        </div>
+  
+        <div class="journey-step">
+          <div class="journey-image">
+            <img src="/images/RT.PNG" alt="الحطب الصناعي">
+          </div>
+          <div class="journey-content">
+            <h3><i class="fas fa-users"></i> رفع الوعي البيئي</h3>
+            <p>تنفيذ حملات توعوية للمواطنين والمقيمين حول آثار الاحتطاب على البيئة وأهمية الحفاظ على الغطاء النباتي.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    const steps = document.querySelectorAll('.journey-step');
+  
+    window.addEventListener('scroll', () => {
+      steps.forEach(step => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          step.classList.add('show');
+        }
+      });
+    });
+  </script>
+  
+    </body>
+    </html>
+

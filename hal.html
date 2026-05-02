@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>لاـ للاحتطاب</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/hal.css">
+</head>
+<body>
+
+  <header>
+ 
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a class="logo"> #خلهاـ خضراء <span>..</span></a>
+    <nav class="navbar">
+      <a href="index.html">الرئيسية</a>
+      <a href="Hal.html">العقوبات </a>
+      <a href="thre.html">الحلول</a>
+      <a href="fory.html">العواقب</a>
+      <a href="fiv.html">الأثر البعيد</a>
+    </nav>
+  </header>
+  
+ 
+
+
+  <section class="penalties">
+    <div class="penalty-intro">
+      <div class="text">
+        <h2>العقوبات على الاحتطاب الجائر</h2>
+        <p>
+          تسعى المملكة إلى حماية البيئة من خلال فرض مجموعة من العقوبات الصارمة على ممارسات الاحتطاب الجائر التي تهدد الغطاء النباتي وتساهم في التصحر وفقدان التنوع البيولوجي. تشمل هذه العقوبات غرامات مالية، والمصادرة، والسجن، بالإضافة إلى حملات رقابية مشددة تهدف إلى ردع المخالفين وتشجيع المجتمع على الالتزام بالممارسات البيئية السليمة.
+        </p>
+      </div>
+      <div class="image">
+        <img src="/images/E33CFD2D-F462-411C-BEDB-FCFBAC6AD3C7.png" alt="حماية البيئة" />
+      </div>
+    </div>
+  
+    <div class="penalty-grid">
+
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>غرامة مالية</h3>
+          <p>غرامة مالية تصل إلى 100,000 ريال سعودي</p>
+        </div>
+        <div class="back">
+          <p>تُطبق غرامات مالية مرتفعة على كل من يقطع الأشجار أو النباتات البرية دون الحصول على تصريح، يتم فرض غرامة مالية تصل إلى 100,000 ريال سعودي.</p>
+        </div>
+      </div>
+  
+      
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-car-crash"></i>
+          <h3>مصادرة الأدوات</h3>
+          <p>مصادرة المركبات والأدوات.</p>
+        </div>
+        <div class="back">
+          <p>يتم سحب المركبات والمعدات المستخدمة في عمليات الاحتطاب، مثل المناشير والمقطورات، كإجراء رادع.</p>
+        </div>
+      </div>
+  
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-gavel"></i>
+          <h3>السجن</h3>
+          <p>   يمكن أن يصل السجن لمدة تصل إلى سنة.</p>
+        </div>
+        <div class="back">
+          <p>تُطبق أحكام بالسجن على المخالفين المتكررين، أو من يثبت عليهم قطع كميات كبيرة من الأشجار بدون ترخيص.</p>
+        </div>
+      </div>
+  
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-tree"></i>
+          <h3> إعادة التشجير</h3>
+          <p>الزام المخالف بإعادة التشجير وإصلاح البيئة المتضررة.</p>
+        </div>
+        <div class="back">
+          <p>تفرض السلطات على الشخص المخالف القيام بأعمال إعادة التشجير لإصلاح الأضرار البيئية الناتجة عن الاحتطاب. </p>
+        </div>
+      </div>
+  
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-bullhorn"></i>
+          <h3>التشهير بالمخالفين</h3>
+          <p>نشر أسماء وصور المخالفين.</p>
+        </div>
+        <div class="back">
+          <p>تقوم بعض الجهات بنشر أسماء المخالفين عبر وسائل الإعلام كإجراء لردع المجتمع وتعزيز ثقافة حماية البيئة.</p>
+        </div>
+      </div>
+  
+      <div class="penalty-card">
+        <div class="front">
+          <i class="fas fa-landmark"></i>
+          <h3>إلغاء الأنشطة التجارية </h3>
+          <p> تجميد أو إلغاء التراخيص التجارية المتعلقة بالأنشطة البيئية  .</p>
+        </div>
+        <div class="back">
+          <p>  قد يتم تجميد أو إلغاء تراخيص النشاط التجاري إذا كان يعمل في مجالات متعلقة بالاحتطاب الجائر.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+   
+ 
+
+
+
+<script>
+  const cards = document.querySelectorAll('.penalty-card');
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible'); 
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.3 });
+  
+  
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+
+  document.querySelectorAll('.penalty-card').forEach(card => {
+    card.addEventListener('click', function () {
+      this.classList.toggle('flip');
+    });
+  });
+  
+</script>
+
+
+
+    
+    </body>
+    </html>

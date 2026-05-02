@@ -1,0 +1,340 @@
+:root {
+    --green: #3a6d3d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+    background-color: rgb(234, 254, 225);}
+
+body {
+    overflow-x: hidden;
+   
+}
+
+header {
+    position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: rgb(234, 254, 225);
+  padding: 2rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  }
+  
+  header .logo {
+    font-size: 4rem;
+    color: #1a531e;
+    font-weight: bold;
+  }
+  
+  header .logo span {
+    color: var(--green);
+  }
+
+
+ #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    font-size: 2.5rem;
+    color: #3a3a3a;
+    cursor: pointer;
+    user-select: none;
+  }
+
+
+
+  
+  nav .navbar {
+    display: flex;
+    gap: 2rem;
+
+  }
+  
+  header .navbar a {
+    font-size: 2rem;
+    padding: 0 5.5rem;
+    color: #163a0e;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+
+
+  }
+  
+  header .navbar a:hover {
+    transform: scale(1.1);
+    color: var(--green);
+  }
+  
+
+
+section {
+    padding: 2rem 9%;
+    margin-top: 10rem;
+   
+}
+
+.penalties {
+   
+  
+        padding: 5rem 9%;
+        background-color: #3a6d3d;
+  }
+  
+  .penalty-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 5rem;
+  }
+  
+  .penalty-intro .text {
+    flex: 1 1 40rem;
+  }
+  
+  .penalty-intro .text h2 {
+    font-size: 3.5rem;
+    color: #def1e1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .penalty-intro .text p {
+    font-size: 1.8rem;
+    color: #cfefd7;
+    line-height: 1.9;
+  }
+  
+  .penalty-intro .image {
+    flex: 1 1 40rem;
+    text-align: center;
+  
+  }
+  
+  .penalty-intro .image img {
+    max-width: 100%;
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 60%;
+
+  }
+  
+  .penalty-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 3rem;
+    justify-items: center;
+    margin-top: 2rem;
+  }
+  
+  .penalty-card {
+    perspective: 1000px;
+    height: 260px;
+    position: relative;
+    cursor: pointer;
+    perspective: 1000px;
+    width: 100%; 
+  }
+  
+  .penalty-card .front,
+  .penalty-card .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #f6fff7;
+    border-radius: 1.5rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.08);
+    transition: transform 0.8s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .penalty-card .front {
+    transform: rotateY(0deg);
+  }
+  
+  .penalty-card .front i {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: var(--green);
+  }
+  
+  .penalty-card .front h3 {
+    font-size: 1.9rem;
+    color: #1a3d20;
+    margin-bottom: 0.5rem;
+  }
+  
+  .penalty-card .front p {
+    font-size: 1.4rem;
+    color: #444;
+  }
+  
+  .penalty-card .back {
+    transform: rotateY(180deg);
+    background-color: #d8f3dc;
+    font-size: 1.5rem;
+    color: #1b3d23;
+    line-height: 1.7;
+    padding: 2rem;
+  }
+  
+  .penalty-card:hover .front {
+    transform: rotateY(-180deg);
+  }
+  
+  .penalty-card:hover .back {
+    transform: rotateY(0deg);
+  }
+  
+
+
+
+
+
+
+
+@keyframes slideIn {
+    from {
+      transform: translateY(50px);
+      opacity: 0; 
+    }
+    to {
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+  
+  
+  .penalty-card {
+    animation: slideIn 0.6s ease-out forwards; 
+    opacity: 0; 
+    transform: translateY(50px); 
+  }
+  
+  
+  .penalty-card.visible {
+    animation: slideIn 0.6s ease-out forwards; 
+    opacity: 1;
+  }
+  
+
+
+
+
+.penalty-card:hover .front {
+    transform: rotateY(-180deg);
+  }
+  .penalty-card:hover .back {
+    transform: rotateY(0deg);
+  }
+  
+ 
+  .penalty-card.flip .front {
+    transform: rotateY(-180deg);
+  }
+  .penalty-card.flip .back {
+    transform: rotateY(0deg);
+  }
+  
+
+
+
+
+
+
+  @media (max-width: 991px){
+    html{
+        font-size: 55%; 
+    }
+    header{
+        padding: 2rem;
+
+    }
+    section{
+        padding: 2rem;
+
+    }
+    .home{
+        background-position: left;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+
+    nav.navbar {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgb(234, 254, 225);
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      display: none; 
+      padding-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-top: 1px solid #ccc;
+    }
+
+    #menu-toggle:checked ~ nav.navbar {
+      display: flex;
+      max-height: 500px; 
+      padding-bottom: 1rem;
+    }
+
+    nav.navbar a {
+      padding: 1.5rem 0;
+      width: 100%;
+      text-align: center;
+      border-top: 1px solid #ccc;
+    }
+    nav.navbar a:first-child {
+      border-top: none;
+    }
+  }
+  @media (max-width: 450px){
+    html{
+        font-size: 50%;     
+    }
+   
+  }
+  @media (max-width: 768px) {
+    .penalty-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  }

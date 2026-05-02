@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لا للاحتطاب</title>
+  <link rel="stylesheet" href="/css/fory.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </label>
+
+    <a class="logo"> #خلهاـ خضراء <span>..</span></a>
+    <nav class="navbar">
+      <a href="index.html">الرئيسية</a>
+      <a href="Hal.html">العقوبات </a>
+      <a href="thre.html">الحلول</a>
+      <a href="fory.html">العواقب</a>
+      <a href="fiv.html">الأثر البعيد</a>
+    </nav>
+  </header>
+
+
+
+  <section class="impact-section">
+    <h2 class="impact-title">عواقب الاحتطاب الجائر</h2>
+  
+    <div class="impact-content">
+      <div class="impact-details">
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-leaf"></i>
+            <h3>تدهور الغطاء النباتي</h3>
+          </div>
+          <hr>
+          <p>يؤدي القطع الجائر للأشجار إلى تقليص الرقعة الخضراء مما يؤثر على التنوع البيولوجي ويزيد من ظاهرة التصحر.</p>
+        </div>
+  
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-seedling"></i>
+            <h3>انخفاض خصوبة التربة</h3>
+          </div>
+          <hr>
+          <p>يؤدي إزالة الأشجار إلى تعرية التربة وفقدان المواد العضوية الضرورية لنمو النبات.</p>
+        </div>
+  
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-wind"></i>
+            <h3>تقلص إنتاج الأكسجين</h3>
+          </div>
+          <hr>
+          <p>مع قلة الأشجار يتراجع إنتاج الأكسجين في الجو ويزداد ثاني أكسيد الكربون مما يخل بتوازن الهواء.</p>
+        </div>
+  
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-water"></i>
+            <h3>انخفاض مخزون المياه الجوفية</h3>
+          </div>
+          <hr>
+          <p>تقل قدرة الأرض على امتصاص المياه بدون جذور النباتات، مما يؤدي إلى انخفاض منسوب المياه الجوفية.</p>
+        </div>
+  
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-smog"></i>
+            <h3>زيادة نسب الغبار في الجو</h3>
+          </div>
+          <hr>
+          <p>الأشجار تمتص الغبار وتخفف من تلوث الهواء، وغيابها يؤدي إلى ازدياد الغبار وانتشاره في البيئة.</p>
+        </div>
+  
+        <div class="impact-paragraph short">
+          <div class="icon-title">
+            <i class="fas fa-water"></i>
+            <h3>زيادة خطورة التعرض للسيول</h3>
+          </div>
+          <hr>
+          <p>تقل قدرة التربة على امتصاص المياه دون النباتات، مما يرفع من احتمالية حدوث سيول مدمرة في المناطق المتأثرة.</p>
+        </div>
+      </div>
+  
+      <div class="impact-image">
+        <img src="/images/gg.png" alt="أثر الاحتطاب الجائر">
+        <img src="/images/sa.png" alt="صورة إضافية" style="margin-top: 2rem;">
+
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+
+  <script>
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+  
+    // مراقبة الفقرات والصورة
+    document.querySelectorAll('.impact-paragraph, .impact-image').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+
+
+</body>
+</html>
+
