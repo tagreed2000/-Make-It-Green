@@ -191,7 +191,7 @@ header .navbar a:hover {
 .timeline-section {
   
   position: relative;
-  background-image: url('images/rt.png'); 
+  background-image: url('/images/rt.png'); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
